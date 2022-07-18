@@ -18,3 +18,5 @@ class Comment(BaseModel):
     text = CharField(max_length=255)
     file = FileField(upload_to='comment/file/')
     author = ForeignKey('auth.User', CASCADE)
+
+
