@@ -47,6 +47,7 @@ class CustomFormApiView(APIView):
         return Response({'status': True})
 
     def post(self, request, format=None):
+        print(request.user.is_authenticated)
         serializer_data = FormSerializers(data=self.request.data)
         serializer_data.is_valid(raise_exception=True)
         return Response(serializer_data.data)

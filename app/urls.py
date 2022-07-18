@@ -24,5 +24,5 @@ urlpatterns = [
     path('post-add', PostAddApiView.as_view(), name='post-add'),
     # path('post-delete/<int:pk>', PostDestroyAPIView.as_view(), name='post-delete'),
     # path('post-update/<int:pk>', PostUpdateAPIView.as_view(), name='post-update'),
-    path('form', CustomFormApiView.as_view())
+    # path('form', CustomFormApiView.as_view())
 ]
